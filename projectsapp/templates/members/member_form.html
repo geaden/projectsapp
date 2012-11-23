@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{%  load crispy_forms_tags %}
+{% load comments %}
+{% load sitetree %}
+{% block title %}{{ object }}{% endblock %}
+{% block head %}{{ object }}{% endblock %}
+{% block content %}
+<form class="form-horizontal" method="post" action="">
+{% csrf_token %}
+{{ form|crispy }}
+<div class="form-actions"><input class="btn" type="submit" value="Сохранить"></div>
+</form>
+{% endblock %}
