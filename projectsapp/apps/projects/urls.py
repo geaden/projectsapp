@@ -6,7 +6,7 @@ from views import ProjectMemberCreateView
 
 urlpatterns = patterns('',
     url(r'^join/$',
-        login_required(ProjectMemberCreateView.as_view()),
+        ProjectMemberCreateView.as_view(),
         name = 'project-join'
     ),
 )

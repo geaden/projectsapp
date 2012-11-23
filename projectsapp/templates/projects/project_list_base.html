@@ -1,0 +1,21 @@
+<table 	class="table table-hover">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Member</th>
+        <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for object in object_list %}
+        <tr>
+            <td>{{ object.id }}</td>
+            <td><a href="{% url 'project-edit' object.project.id %}">{{ object.project.name }}</a></td>
+            <td><a href="{% url 'member-detail' object.member.id %}">{{ object.member.trademark }}</a></td>
+            <td>{{ object.member }}</td>
+            <td>{{ object.role }}</td
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

@@ -3,7 +3,7 @@ from django.db.models import Max
 from django.views.generic import CreateView, UpdateView
 
 from models import ProjectMember
-from forms import ProjectMemberForm,
+from forms import ProjectMemberForm
 
 class ProjectMemberCreateView(CreateView):
     model = ProjectMember

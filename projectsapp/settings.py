@@ -16,8 +16,6 @@ class BaseSettings(Settings):
         # ('Your Name', 'your_email@example.com'),
     )
 
-    AUTH_USER_MODEL = 'users.User'
-
     MANAGERS = ADMINS
 
     LOGIN_REDIRECT_URL = reverse_lazy('home')
@@ -146,12 +144,8 @@ class BaseSettings(Settings):
         'django_nose',
 
         #projectsapp apps
-        'projectsapp.apps.dictionaries',
-        'projectsapp.apps.users',
         'projectsapp.apps.members',
         'projectsapp.apps.projects',
-        'projectsapp.apps.wishes',
-        'projectsapp.apps.works',
     )
 
     FIXTURE_DIRS = (

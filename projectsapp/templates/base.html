@@ -1,0 +1,35 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru-RU">
+<head>
+    <title>Title | {% block title %}{% endblock %}</title>
+    <meta http-equiv="content-type" content="application/xhtml;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/custom.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/css/print.css"   media="print" />
+    {% block external_head %}{% endblock %}
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <!--[if lt IE 8.]>
+    <link rel="stylesheet" type="text/css" href="/static/css/style-ie.css" />
+    <![endif]-->
+    <!--[if lt IE 7.]>
+    <link rel="stylesheet" type="text/css" href="/static/css/style-ie6.css" />
+    <![endif]-->
+</head>
+<body>
+<div class="fon"></div>
+<div id="wrapper">
+{%  block content %}{%  endblock %}
+{%  block extra_body %}{%  endblock %}
+</div>
+    <div class="f_line"></div>
+    <div id="footer">
+        <div class="copy">© Copyright {% now "Y" %}</div>
+    </div><!-- #footer -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+{% block external_js %}{% endblock %}
+</body>
+</html>
