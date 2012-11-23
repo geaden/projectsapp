@@ -3,7 +3,7 @@ import os
 import sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "exeviks.local_settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "projects_app.local_settings")
     os.environ.setdefault("DJANGO_CONFIGURATION", "DevSettings")
 
     from configurations.management import execute_from_command_line
