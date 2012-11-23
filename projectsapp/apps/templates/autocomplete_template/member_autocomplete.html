@@ -1,0 +1,11 @@
+{% if choices %}
+    {% for choice in choices %}
+        <div data-value="{{ choice.pk }}">
+            {{ choice.name }}
+
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No matches found</p>
+{% endif %}
+<a href="{% url member-add %}">Add member</a>

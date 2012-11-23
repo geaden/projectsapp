@@ -1,0 +1,16 @@
+-e git://github.com/django/django.git@4ea8105120121c7ef0d3dd6eb23f2bf5f55b496a#egg=Django-dev
+Pillow==1.7.8
+Pygments==1.5
+South==0.7.6
+Werkzeug==0.8.3
+bpython==0.11
+distribute==0.6.30
+django-autocomplete-light==1.1.0
+django-configurations==0.1
+django-crispy-forms==1.2.0
+django-debug-toolbar==0.9.4
+django-extensions==1.0.1
+django-nose==1.1
+-e git://github.com/clincher/django-sitetree.git@b16613684866f686ef61680f63e1f2c698cefe63#egg=django_sitetree-dev
+nose==1.2.1
+psycopg2==2.4.5

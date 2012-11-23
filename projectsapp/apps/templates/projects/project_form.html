@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Add project{% endblock %}
+
+{% block head %}Add project{% endblock %}
+{% block external_head %}
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui-1.8.23.custom.css" media="screen" />
+{% endblock %}
+{% block content %}
+<form class="form-horizontal" action="" method="POST">
+    {{ form }}
+    <div class="form-actions"><input class="btn" type="submit" value="Сохранить"></div>
+</form>
+    {% block external_js %}
+        {% include 'autocomplete_light/static.html' %}
+        <script type="text/javascript" src="/static/js/jquery.ui.datepicker-ru.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.autocomplete.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.autocomplete.pack.js"></script>
+        <script type="text/javascript" src="/static/js/add_consultant_or_purchaser.js"></script>
+    {% endblock %}
+{% endblock %}
